@@ -12,7 +12,7 @@ Object.defineProperty(exports, "Button", {
 Object.defineProperty(exports, "Checking", {
   enumerable: true,
   get: function () {
-    return _Checking.default;
+    return _Checking.Checking;
   }
 });
 Object.defineProperty(exports, "NavBar", {
@@ -21,7 +21,7 @@ Object.defineProperty(exports, "NavBar", {
     return _Navbar.default;
   }
 });
-var _Checking = _interopRequireDefault(require("./Checking"));
+var _Checking = require("./Checking");
 require("./tailwind.css");
 var _Navbar = _interopRequireDefault(require("./NavBar/Navbar"));
 var _Button = require("./Button");

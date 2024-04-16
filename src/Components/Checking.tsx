@@ -1,7 +1,7 @@
 import { Button, Title } from '@mantine/core';
 import React from 'react';
 
-const Checking = () => {
+export const Checking = () => {
     return (
         <>
             <Title order={1} c={"dimmed"}>ssssssssssssssssssss</Title>
@@ -10,4 +10,4 @@ const Checking = () => {
     )
 }
 
-export default Checking;
+//export default Checking;

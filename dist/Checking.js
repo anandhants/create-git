@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.default = void 0;
+exports.Checking = void 0;
 var _core = require("@mantine/core");
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -13,4 +13,6 @@ const Checking = () => {
     c: "dimmed"
   }, "ssssssssssssssssssss"), /*#__PURE__*/_react.default.createElement(_core.Button, null, "Verdana button"));
 };
-var _default = exports.default = Checking;
+
+//export default Checking;
+exports.Checking = Checking;
