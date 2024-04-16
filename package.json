@@ -8,7 +8,7 @@
       "@babel/preset-typescript"
     ]
   },
-  "main": "dist/index",
+  "main": "dist/components/checking",
   "dependencies": {
     "@babel/cli": "^7.23.9",
     "@heroicons/react": "^1.0.4",
