@@ -1,3 +1,3 @@
-import './index.css';
-// export { NavBar } from "./NavBar/Navbar";
-export {Checking} from './Checking'
+import './tailwind.css';
+import { ButtonProps } from './interfaces';
+export { Button } from "./Button";

@@ -3,11 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "Checking", {
+Object.defineProperty(exports, "Button", {
   enumerable: true,
   get: function () {
-    return _Checking.Checking;
+    return _Button.Button;
   }
 });
-require("./index.css");
-var _Checking = require("./Checking");
+require("./tailwind.css");
+var _Button = require("./Button");
