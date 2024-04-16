@@ -1,3 +1,7 @@
-export const Checking =()=>{
-    return <div>ssssssssssssssssssss</div>
+ const Checking =()=>{
+    return (
+         <p>ssssssssssssssssssss</p>
+    )
 }
+
+export default Checking;
