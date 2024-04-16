@@ -4,10 +4,10 @@ import { GroupedIcons } from "../MantineUi/GroupedIcons";
 import { headerIcons, headerSelectData, headerTitles, toggleMenusData } from "../Settings/DataUtilis";
 import { DrawerUi } from "../MantineUi/DrawerUi";
 import { AvatharImage } from "../MantineUi/AvatharImage";
-import AvatharLogo from "../../assets/Images/avathar.jpg";
+import AvatharLogo from "../assets/Images/avathar.jpg";
 import { IconTextArrow } from "../MantineUi/IconTextArrow";
 import { HeaderMenu } from "../MantineUi/HeaderMenu";
-import Logos from "../../assets/Images/Logos.svg";
+import Logos from "../assets/Images/Logos.svg";
 import { ToggleMenus } from "../MantineUi/ToggleMenu";
 import React from "react";
 interface IMobileNavBarProps {

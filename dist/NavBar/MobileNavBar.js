@@ -10,10 +10,10 @@ var _GroupedIcons = require("../MantineUi/GroupedIcons");
 var _DataUtilis = require("../Settings/DataUtilis");
 var _DrawerUi = require("../MantineUi/DrawerUi");
 var _AvatharImage = require("../MantineUi/AvatharImage");
-var _avathar = _interopRequireDefault(require("../../assets/Images/avathar.jpg"));
+var _avathar = _interopRequireDefault(require("../assets/Images/avathar.jpg"));
 var _IconTextArrow = require("../MantineUi/IconTextArrow");
 var _HeaderMenu = require("../MantineUi/HeaderMenu");
-var _Logos = _interopRequireDefault(require("../../assets/Images/Logos.svg"));
+var _Logos = _interopRequireDefault(require("../assets/Images/Logos.svg"));
 var _ToggleMenu = require("../MantineUi/ToggleMenu");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }

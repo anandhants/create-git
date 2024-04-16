@@ -8,13 +8,14 @@ import {
   headerSubMenu,
   headerTitles,
 } from "../../Components/Settings/DataUtilis";
-import AvatharLogo from "../../assets/Images/avathar.jpg";
+// import AvatharLogo from "../../assets/Images/avathar.jpg";
+import AvatharLogo from "../assets/Images/avathar.jpg";
 import { GroupedIcons } from "../MantineUi/GroupedIcons";
 import { SubNavBar } from "./SubNavBar";
 import { useDisclosure } from "@mantine/hooks";
 import MobileNavBar from "./MobileNavBar";
 import { IconTextArrow } from "../MantineUi/IconTextArrow";
-import Logos from "../../assets/Images/Logos.svg";
+import Logos from "../assets/Images/Logos.svg";
 import { ToggleMenus } from "../MantineUi/ToggleMenu";
 import { toggleMenusData } from "../Settings/DataUtilis";
 import { Containerui } from "../MantineUi/ContainerUi";
