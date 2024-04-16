@@ -11,14 +11,13 @@ var _DataUtilis = require("../Settings/DataUtilis");
 var _avathar = _interopRequireDefault(require("../assets/Images/avathar.jpg"));
 var _GroupedIcons = require("../MantineUi/GroupedIcons");
 var _SubNavBar = require("./SubNavBar");
-var _hooks = require("@mantine/hooks");
-var _MobileNavBar = _interopRequireDefault(require("./MobileNavBar"));
 var _IconTextArrow = require("../MantineUi/IconTextArrow");
 var _Logos = _interopRequireDefault(require("../assets/Images/Logos.svg"));
 var _ToggleMenu = require("../MantineUi/ToggleMenu");
 var _ContainerUi = require("../MantineUi/ContainerUi");
 var _GroupMenus = require("../MantineUi/GroupMenus");
 var _AvatharImage = require("../MantineUi/AvatharImage");
+var _hooks = require("@mantine/hooks");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
@@ -31,6 +30,9 @@ function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; 
 // } from "../../Components/Settings/DataUtilis";
 
 // import AvatharLogo from "../../assets/Images/avathar.jpg";
+
+// import { useDisclosure } from "@mantine/hooks";
+// import MobileNavBar from "./MobileNavBar";
 
 // interface INavBarInterface {
 //   headerMenus?: any
@@ -46,10 +48,7 @@ const NavBar = () => {
   //   headerSubMenu,
   //   headerTitles, } = props
   const [openMenuId, setOpenMenuId] = (0, _react.useState)(null);
-  const [openedResponsive, {
-    toggle: toggleDrawer,
-    close: closeDrawer
-  }] = (0, _hooks.useDisclosure)(false);
+  // const [openedResponsive, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [searchValue, setSearchValue] = (0, _react.useState)(null);
   const [openSubMenuId, setSubOpenMenuId] = (0, _react.useState)(null);
   const [openSubTitleMenu, setOpenSubTitleMenu] = (0, _react.useState)(null);
@@ -108,20 +107,7 @@ const NavBar = () => {
     height: 40,
     radius: "xl",
     classNames: "cursor-pointer "
-  }))), /*#__PURE__*/_react.default.createElement(_core.Burger, {
-    opened: openedResponsive,
-    onClick: toggleDrawer,
-    hiddenFrom: "md"
-  }), /*#__PURE__*/_react.default.createElement(_MobileNavBar.default, {
-    drawerOpened: openedResponsive,
-    toggle: toggleDrawer,
-    closeDrawer: closeDrawer,
-    data: _DataUtilis.headerMenus,
-    subData: _DataUtilis.headerSubMenu,
-    setSearchValue: setSearchValue,
-    searchValue: searchValue,
-    isMobile: isMobile
-  })), /*#__PURE__*/_react.default.createElement(_core.Box, {
+  })))), /*#__PURE__*/_react.default.createElement(_core.Box, {
     visibleFrom: "md",
     className: "xl:w-[67%] xl:!ml-[15.5rem] lg:w-[53%] lg:!ml-[15.5rem] md:w-6/12 mx-auto"
   }, /*#__PURE__*/_react.default.createElement(_ContainerUi.Containerui, {
