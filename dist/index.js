@@ -28,7 +28,6 @@ require("@mantine/core/styles.css");
 var _core = require("@mantine/core");
 var _Navbar = _interopRequireDefault(require("./NavBar/Navbar"));
 var _Button = require("./Button");
-require("./App.css");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const CheckinNavbar = () => {
   return /*#__PURE__*/React.createElement(_core.MantineProvider, null, /*#__PURE__*/React.createElement(_core.Container, {

@@ -4,7 +4,6 @@ import '@mantine/core/styles.css';
 import { Container, MantineProvider } from '@mantine/core';
 import NavBar from './NavBar/Navbar';
 import { Button } from "./Button";
-import './App.css'
 
 
 const CheckinNavbar = () => {
