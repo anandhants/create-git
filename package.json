@@ -40,7 +40,7 @@
     "tailwind-refresh": "npx tailwindcss -i ./src/index.css -o ./src/App.css ./src/components/tailwind.css",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
     "delete-old": "del dist",
-    "publish:npm": "babel src/components --extensions \".js,.jsx,.ts,.tsx\" -d dist --copy-files"
+    "publish:npm": "babel src/mantine --extensions \".js,.jsx,.ts,.tsx\" -d dist --copy-files"
   },
   "eslintConfig": {
     "extends": [
