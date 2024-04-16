@@ -3,7 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.NavBar = void 0;
+exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _core = require("@mantine/core");
 var _HeaderMenu = require("../MantineUi/HeaderMenu");
@@ -145,4 +145,4 @@ const NavBar = () => {
     setOpenSubTitleMenu: setOpenSubTitleMenu
   })));
 };
-exports.NavBar = NavBar;
+var _default = exports.default = NavBar;

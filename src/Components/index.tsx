@@ -1,8 +1,8 @@
 import Checking from './Checking';
 import './tailwind.css';
-import { NavBar } from './NavBar/Navbar';
+import NavBar from './NavBar/Navbar';
 import { Button } from "./Button";
 
-export { Checking, Button , NavBar};
+export { Checking, Button, NavBar };
 
 

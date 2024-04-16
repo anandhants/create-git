@@ -36,7 +36,7 @@ import { useMediaQuery } from '@mantine/hooks';
 //   headerSubMenu?: any
 //   headerTitles?: any
 // }
-export const NavBar = () => {
+const NavBar = () => {
   // const { headerMenus,
   //   headerSelectData,
   //   headerIcons,
@@ -165,3 +165,4 @@ export const NavBar = () => {
 
   );
 };
+export default NavBar;
