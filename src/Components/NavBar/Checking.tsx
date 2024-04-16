@@ -1,5 +1,9 @@
 import React from 'react';
 
-export const Checking =()=>{
-    return <>check</>
+const Checking = () => {
+    return (
+        <p>ssssssssssssssssssss</p>
+    )
 }
+
+export default Checking;
