@@ -28,7 +28,6 @@ import { toggleMenusData } from "../Settings/DataUtilis";
 import { Containerui } from "../MantineUi/ContainerUi";
 import { GroupMenus } from "../MantineUi/GroupMenus";
 import { AvatharImage } from "../MantineUi/AvatharImage";
-// import { useMediaQuery } from '@mantine/hooks';
 // interface INavBarInterface {
 //   headerMenus?: any
 //   headerSelectData?: any
@@ -44,13 +43,11 @@ const NavBar = () => {
   //   headerTitles, } = props
   const [openMenuId, setOpenMenuId] = useState<number | null>(null);
   // const [openedResponsive, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-  const [searchValue, setSearchValue] = useState<any | "">(null);
   const [openSubMenuId, setSubOpenMenuId] = useState<number | null>(null);
   const [openSubTitleMenu, setOpenSubTitleMenu] = useState<Boolean | null>(
     null
   );
 
-  // const isMobile = useMediaQuery('(max-width: 991px)');
 
   const handleHeaderClick = (id: number) => {
     setOpenMenuId((prevId) => (prevId === id ? id : id));
@@ -62,12 +59,6 @@ const NavBar = () => {
     setSubOpenMenuId(null);
   };
 
-  // useEffect(() => {
-  //   if (isMobile) {
-  //     setOpenMenuId(null);
-  //     setSubOpenMenuId(null);
-  //   }
-  // }, [isMobile])
 
   const headerSubMenuFilter = headerSubMenu?.filter(
     (el: any) => el.id === openMenuId

@@ -33,7 +33,6 @@ function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; 
 // import { useDisclosure } from "@mantine/hooks";
 // import MobileNavBar from "./MobileNavBar";
 
-// import { useMediaQuery } from '@mantine/hooks';
 // interface INavBarInterface {
 //   headerMenus?: any
 //   headerSelectData?: any
@@ -49,12 +48,8 @@ const NavBar = () => {
   //   headerTitles, } = props
   const [openMenuId, setOpenMenuId] = (0, _react.useState)(null);
   // const [openedResponsive, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
-  const [searchValue, setSearchValue] = (0, _react.useState)(null);
   const [openSubMenuId, setSubOpenMenuId] = (0, _react.useState)(null);
   const [openSubTitleMenu, setOpenSubTitleMenu] = (0, _react.useState)(null);
-
-  // const isMobile = useMediaQuery('(max-width: 991px)');
-
   const handleHeaderClick = id => {
     setOpenMenuId(prevId => prevId === id ? id : id);
     setSubOpenMenuId(null);
@@ -63,14 +58,6 @@ const NavBar = () => {
     setOpenMenuId(null);
     setSubOpenMenuId(null);
   };
-
-  // useEffect(() => {
-  //   if (isMobile) {
-  //     setOpenMenuId(null);
-  //     setSubOpenMenuId(null);
-  //   }
-  // }, [isMobile])
-
   const headerSubMenuFilter = _DataUtilis.headerSubMenu === null || _DataUtilis.headerSubMenu === void 0 ? void 0 : _DataUtilis.headerSubMenu.filter(el => el.id === openMenuId);
   return /*#__PURE__*/_react.default.createElement(_core.Paper, {
     className: "xl:px-24 px-4 py-4",
