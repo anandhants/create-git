@@ -3,8 +3,8 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.Checking = void 0;
+exports.default = void 0;
 const Checking = () => {
-  return /*#__PURE__*/React.createElement("div", null, "ssssssssssssssssssss");
+  return /*#__PURE__*/React.createElement("p", null, "ssssssssssssssssssss");
 };
-exports.Checking = Checking;
+var _default = exports.default = Checking;
