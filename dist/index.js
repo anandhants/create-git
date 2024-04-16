@@ -9,12 +9,5 @@ Object.defineProperty(exports, "Checking", {
     return _Checking.Checking;
   }
 });
-Object.defineProperty(exports, "NavBar", {
-  enumerable: true,
-  get: function () {
-    return _Navbar.NavBar;
-  }
-});
-require("./app.css");
-var _Navbar = require("./NavBar/Navbar");
+require("./index.css");
 var _Checking = require("./Checking");
