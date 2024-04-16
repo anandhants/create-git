@@ -17,9 +17,9 @@ const GroupedIcons = props => {
     onclick,
     indicationShow
   } = props;
-  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, IconName?.map(icon => /*#__PURE__*/_react.default.createElement(_core.Avatar, {
+  return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, IconName === null || IconName === void 0 ? void 0 : IconName.map(icon => /*#__PURE__*/_react.default.createElement(_core.Avatar, {
     key: Math.random(),
-    className: `cursor-pointer ${classNames}`,
+    className: "cursor-pointer ".concat(classNames),
     c: "text-icon-text "
   }, /*#__PURE__*/_react.default.createElement(_Icons.Icons, {
     IconName: icon.name,

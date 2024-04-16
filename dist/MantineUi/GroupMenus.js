@@ -19,11 +19,11 @@ const GroupMenus = props => {
     gap: "xs",
     visibleFrom: "md",
     className: groupClassName
-  }, headerMenusDatas?.map(el => /*#__PURE__*/_react.default.createElement(_core.Text, {
+  }, headerMenusDatas === null || headerMenusDatas === void 0 ? void 0 : headerMenusDatas.map(el => /*#__PURE__*/_react.default.createElement(_core.Text, {
     size: "md",
     inline: true,
     fw: 500,
-    className: `cursor-pointer hover:bg-[#F1F3F5] rounded-md ${state === el.id && "bg-[#F1F3F5]"} ${textClassName}`,
+    className: "cursor-pointer hover:bg-[#F1F3F5] rounded-md ".concat(state === el.id && "bg-[#F1F3F5]", " ").concat(textClassName),
     p: 12,
     onClick: () => onClick(el.id),
     key: Math.random()

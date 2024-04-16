@@ -27,7 +27,7 @@ const IconText = props => {
     variant: "transparent",
     classNames: "!text-secondary-text"
   }), /*#__PURE__*/React.createElement(_core.Text, {
-    className: `${classNames} !font-bold !text-secondary-text !mt-[3px]`,
+    className: "".concat(classNames, " !font-bold !text-secondary-text !mt-[3px]"),
     size: "md"
   }, dropdownTitle));
 };

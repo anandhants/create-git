@@ -16,7 +16,7 @@ const HeaderName = props => {
     mobileShow
   } = props;
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement(_core.Text, {
-    className: `${headerClass} !text-primary-text !font-bold`,
+    className: "".concat(headerClass, " !text-primary-text !font-bold"),
     onClick: handleToggle,
     size: "lg",
     visibleFrom: mobileShow && "sm"

@@ -11,6 +11,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // import { Avatar, Indicator } from "@mantine/core";
 
 const Icons = props => {
+  var _IconCall$find;
   // const { IconName, onClick, classNames, variant, size, color, stroke, avtharClassName, indicationShow } = props;
   const {
     IconName,
@@ -22,7 +23,7 @@ const Icons = props => {
     stroke,
     avtharClassName
   } = props;
-  const IconComponent = _IconsUtility.IconCall.find(el => el.name === IconName)?.component;
+  const IconComponent = (_IconCall$find = _IconsUtility.IconCall.find(el => el.name === IconName)) === null || _IconCall$find === void 0 ? void 0 : _IconCall$find.component;
   // const IndicationIcon = IconCall.find((el) => el.name === IconName)?.indication;
   // If IconComponent is not found, return null or render a fallback icon
   if (!IconComponent) {
@@ -32,12 +33,12 @@ const Icons = props => {
   return /*#__PURE__*/_react.default.createElement(_core.Avatar, {
     variant: variant,
     onClick: onClick,
-    className: `${avtharClassName}`
+    className: "".concat(avtharClassName)
   }, /*#__PURE__*/_react.default.createElement(IconComponent, {
     size: size,
     color: color,
     stroke: stroke,
-    className: `cursor-pointer ${classNames} `
+    className: "cursor-pointer ".concat(classNames, " ")
   }));
 };
 exports.Icons = Icons;

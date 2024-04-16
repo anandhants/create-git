@@ -23,7 +23,7 @@ const Button = _ref => {
   } = _ref;
   return /*#__PURE__*/_react.default.createElement("button", _extends({
     type: "button",
-    className: [`${backgroundColor}`, `${hoverBg}`, `${textColor}`, `${className}`].join(' ')
+    className: ["".concat(backgroundColor), "".concat(hoverBg), "".concat(textColor), "".concat(className)].join(' ')
   }, props, {
     disabled: disabled,
     onClick: onClick,

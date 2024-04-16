@@ -1,4 +1,5 @@
 {
+    "presets": ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
     "plugins": [
         "@babel/plugin-transform-typescript",
         [
@@ -7,25 +8,9 @@
                 "root": ["./"],
                 "alias": {
                     "@mantine/core": "@mantine/core",
-                    "@mantine/hooks": "@mantine/hooks", 
-                    "@mantine/core/core/styles.css": "@mantine/core/core/styles.css"
+                     "@mantine/hooks": "@mantine/hooks" 
                 }
             }
         ]
-    ],
-    "sourceType": "unambiguous",
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "chrome": 100,
-            "safari": 15,
-            "firefox": 91
-          }
-        }
-      ],
-      "@babel/preset-typescript",
-      "@babel/preset-react"
     ]
 }

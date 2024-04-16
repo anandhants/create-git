@@ -19,7 +19,7 @@ const AvatharImage = props => {
   return /*#__PURE__*/_react.default.createElement(_core.Image, {
     src: AvathatarimageUrl,
     alt: name,
-    className: `${classNames}`,
+    className: "".concat(classNames),
     w: width,
     h: height,
     radius: radius

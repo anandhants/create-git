@@ -12,6 +12,7 @@ var _ContainerUi = require("../MantineUi/ContainerUi");
 var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const SubNavBar = props => {
+  var _Data$0$items;
   const {
     Data,
     handleCancel,
@@ -36,7 +37,7 @@ const SubNavBar = props => {
   }, /*#__PURE__*/_react.default.createElement(_ToggleMenu.ToggleMenus, {
     ToogleMenusItem: Data,
     opened: openSubTitleMenu,
-    setOpened: Data?.[0].options == true ? setOpenSubTitleMenu : () => {}
+    setOpened: (Data === null || Data === void 0 ? void 0 : Data[0].options) == true ? setOpenSubTitleMenu : () => {}
   }, Data[0].options == true ? /*#__PURE__*/_react.default.createElement(_SubIconText.SubIconText, {
     dropdownTitle: Data[0].name,
     subIcon: Data[0].icons,
@@ -45,12 +46,12 @@ const SubNavBar = props => {
   }) : /*#__PURE__*/_react.default.createElement(_IconText.IconText, {
     dropdownTitle: Data[0].name,
     subIcon: Data[0].icons
-  })), Data[0].items?.map(el => /*#__PURE__*/_react.default.createElement(_core.Text, {
+  })), (_Data$0$items = Data[0].items) === null || _Data$0$items === void 0 ? void 0 : _Data$0$items.map(el => /*#__PURE__*/_react.default.createElement(_core.Text, {
     size: "md",
     inline: true,
     key: Math.random(),
     p: 12,
-    className: `cursor-pointer text-secondary-text !mx-1 hover:bg-[#F1F3F5] rounded-md ${openSubMenuId == el.id && "bg-[#F1F3F5]"}`,
+    className: "cursor-pointer text-secondary-text !mx-1 hover:bg-[#F1F3F5] rounded-md ".concat(openSubMenuId == el.id && "bg-[#F1F3F5]"),
     fw: 500,
     onClick: () => handleHeaderSubClick(el.id)
   }, el.name)))), /*#__PURE__*/_react.default.createElement(_core.ActionIcon, {

@@ -28,7 +28,7 @@ const SubIconText = props => {
     variant: "transparent",
     classNames: "!text-secondary-text !w-6 !h-6 !mt-[-4px]"
   }), /*#__PURE__*/React.createElement(_core.Text, {
-    className: `${classNames}`,
+    className: "".concat(classNames),
     size: "lg",
     c: colors,
     fw: fontWeight

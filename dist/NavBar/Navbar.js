@@ -33,7 +33,7 @@ const NavBar = () => {
     setOpenMenuId(null);
     setSubOpenMenuId(null);
   };
-  const headerSubMenuFilter = _DataUtilis.headerSubMenu?.filter(el => el.id === openMenuId);
+  const headerSubMenuFilter = _DataUtilis.headerSubMenu === null || _DataUtilis.headerSubMenu === void 0 ? void 0 : _DataUtilis.headerSubMenu.filter(el => el.id === openMenuId);
   return /*#__PURE__*/_react.default.createElement(_core.MantineProvider, null, /*#__PURE__*/_react.default.createElement(_core.Container, {
     fluid: true,
     className: "flex flex-col min-h-screen bg-white-bg !p-0 w-full"

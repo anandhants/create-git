@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Button, MantineProvider, Title } from '@mantine/core';
 import '@mantine/core/styles.css';
 
