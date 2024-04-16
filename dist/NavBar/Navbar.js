@@ -7,6 +7,7 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 var _core = require("@mantine/core");
 var _HeaderMenu = require("../MantineUi/HeaderMenu");
+require("@mantine/core/styles.css");
 var _DataUtilis = require("../Settings/DataUtilis");
 var _avathar = _interopRequireDefault(require("../assets/Images/avathar.jpg"));
 var _GroupedIcons = require("../MantineUi/GroupedIcons");
@@ -33,7 +34,10 @@ const NavBar = () => {
     setSubOpenMenuId(null);
   };
   const headerSubMenuFilter = _DataUtilis.headerSubMenu === null || _DataUtilis.headerSubMenu === void 0 ? void 0 : _DataUtilis.headerSubMenu.filter(el => el.id === openMenuId);
-  return /*#__PURE__*/_react.default.createElement(_core.Paper, {
+  return /*#__PURE__*/_react.default.createElement(_core.MantineProvider, null, /*#__PURE__*/_react.default.createElement(_core.Container, {
+    fluid: true,
+    className: "flex flex-col min-h-screen bg-white-bg !p-0 w-full"
+  }, /*#__PURE__*/_react.default.createElement(_core.Paper, {
     className: "xl:px-24 px-4 py-4",
     shadow: "md",
     variant: "transparent"
@@ -94,6 +98,6 @@ const NavBar = () => {
     openSubMenuId: openSubMenuId,
     openSubTitleMenu: openSubTitleMenu,
     setOpenSubTitleMenu: setOpenSubTitleMenu
-  })));
+  })))));
 };
 var _default = exports.default = NavBar;
