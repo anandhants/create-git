@@ -42,7 +42,6 @@ const NavBar = () => {
   //   headerSubMenu,
   //   headerTitles, } = props
   const [openMenuId, setOpenMenuId] = useState<number | null>(null);
-  // const [openedResponsive, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [openSubMenuId, setSubOpenMenuId] = useState<number | null>(null);
   const [openSubTitleMenu, setOpenSubTitleMenu] = useState<Boolean | null>(
     null
@@ -111,22 +110,7 @@ const NavBar = () => {
             />
           </ToggleMenus>
         </Group>
-        {/* mobile responsive condition adding burger */}
-        {/* <Burger
-          opened={openedResponsive}
-          onClick={toggleDrawer}
-          hiddenFrom="md"
-        />
-        <MobileNavBar
-          drawerOpened={openedResponsive}
-          toggle={toggleDrawer}
-          closeDrawer={closeDrawer}
-          data={headerMenus}
-          subData={headerSubMenu}
-          setSearchValue={setSearchValue}
-          searchValue={searchValue}
-          isMobile={isMobile}
-        /> */}
+    
       </Flex>
       <Box visibleFrom="md" className="xl:w-[67%] xl:!ml-[15.5rem] lg:w-[53%] lg:!ml-[15.5rem] md:w-6/12 mx-auto">
         <Containerui sizeContainer={"100%"} containerClass="mt-[-40px]">
