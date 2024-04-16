@@ -1,13 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, Burger, Divider, Flex, Group, Menu, Paper } from "@mantine/core";
 import { HeaderMenu } from "../MantineUi/HeaderMenu";
-// import {
-//   headerMenus,
-//   headerSelectData,
-//   headerIcons,
-//   headerSubMenu,
-//   headerTitles,
-// } from "../../Components/Settings/DataUtilis";
+
 import {
   headerMenus,
   headerSelectData,
@@ -15,12 +9,9 @@ import {
   headerSubMenu,
   headerTitles,
 } from "../Settings/DataUtilis";
-// import AvatharLogo from "../../assets/Images/avathar.jpg";
 import AvatharLogo from "../assets/Images/avathar.jpg";
 import { GroupedIcons } from "../MantineUi/GroupedIcons";
 import { SubNavBar } from "./SubNavBar";
-// import { useDisclosure } from "@mantine/hooks";
-// import MobileNavBar from "./MobileNavBar";
 import { IconTextArrow } from "../MantineUi/IconTextArrow";
 import Logos from "../assets/Images/Logos.svg";
 import { ToggleMenus } from "../MantineUi/ToggleMenu";
@@ -28,19 +19,8 @@ import { toggleMenusData } from "../Settings/DataUtilis";
 import { Containerui } from "../MantineUi/ContainerUi";
 import { GroupMenus } from "../MantineUi/GroupMenus";
 import { AvatharImage } from "../MantineUi/AvatharImage";
-// interface INavBarInterface {
-//   headerMenus?: any
-//   headerSelectData?: any
-//   headerIcons?: any
-//   headerSubMenu?: any
-//   headerTitles?: any
-// }
+
 const NavBar = () => {
-  // const { headerMenus,
-  //   headerSelectData,
-  //   headerIcons,
-  //   headerSubMenu,
-  //   headerTitles, } = props
   const [openMenuId, setOpenMenuId] = useState<number | null>(null);
   const [openSubMenuId, setSubOpenMenuId] = useState<number | null>(null);
   const [openSubTitleMenu, setOpenSubTitleMenu] = useState<Boolean | null>(
@@ -55,7 +35,6 @@ const NavBar = () => {
     setOpenMenuId(null);
     setSubOpenMenuId(null);
   };
-
 
   const headerSubMenuFilter = headerSubMenu?.filter(
     (el: any) => el.id === openMenuId
