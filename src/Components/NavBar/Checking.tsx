@@ -1,8 +1,12 @@
+import { Button, Title } from '@mantine/core';
 import React from 'react';
 
 const Checking = () => {
     return (
-        <p>ssssssssssssssssssss</p>
+        <>
+            <Title order={1} c={"dimmed"}>ssssssssssssssssssss</Title>
+            <Button>Verdana button</Button>
+        </>
     )
 }
 
