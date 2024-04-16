@@ -47,7 +47,6 @@ const NavBar = () => {
   //   headerSubMenu,
   //   headerTitles, } = props
   const [openMenuId, setOpenMenuId] = (0, _react.useState)(null);
-  // const [openedResponsive, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [openSubMenuId, setSubOpenMenuId] = (0, _react.useState)(null);
   const [openSubTitleMenu, setOpenSubTitleMenu] = (0, _react.useState)(null);
   const handleHeaderClick = id => {

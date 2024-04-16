@@ -46,8 +46,6 @@ const NavBar = () => {
   const [openSubTitleMenu, setOpenSubTitleMenu] = useState<Boolean | null>(
     null
   );
-
-
   const handleHeaderClick = (id: number) => {
     setOpenMenuId((prevId) => (prevId === id ? id : id));
     setSubOpenMenuId(null);
