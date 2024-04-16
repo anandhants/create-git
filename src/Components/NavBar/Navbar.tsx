@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { Box, Burger, Divider, Flex, Group, Menu, Paper } from "@mantine/core";
 import { HeaderMenu } from "../MantineUi/HeaderMenu";
+// import {
+//   headerMenus,
+//   headerSelectData,
+//   headerIcons,
+//   headerSubMenu,
+//   headerTitles,
+// } from "../../Components/Settings/DataUtilis";
 import {
   headerMenus,
   headerSelectData,
   headerIcons,
   headerSubMenu,
   headerTitles,
-} from "../../Components/Settings/DataUtilis";
+} from "../Settings/DataUtilis";
 // import AvatharLogo from "../../assets/Images/avathar.jpg";
 import AvatharLogo from "../assets/Images/avathar.jpg";
 import { GroupedIcons } from "../MantineUi/GroupedIcons";
