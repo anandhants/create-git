@@ -1,6 +1,8 @@
- const Checking =()=>{
+import React from 'react';
+
+const Checking = () => {
     return (
-         <p>ssssssssssssssssssss</p>
+        <p>ssssssssssssssssssss</p>
     )
 }
 
