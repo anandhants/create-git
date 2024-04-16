@@ -9,7 +9,7 @@ import { IconTextArrow } from "../MantineUi/IconTextArrow";
 import { HeaderMenu } from "../MantineUi/HeaderMenu";
 import Logos from "../../assets/Images/Logos.svg";
 import { ToggleMenus } from "../MantineUi/ToggleMenu";
-
+import React from "react";
 interface IMobileNavBarProps {
   drawerOpened?: any;
   closeDrawer?: any;

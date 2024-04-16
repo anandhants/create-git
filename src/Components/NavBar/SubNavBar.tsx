@@ -3,7 +3,7 @@ import { ToggleMenus } from "../MantineUi/ToggleMenu";
 import { SubIconText } from "../MantineUi/SubIconText";
 import { IconText } from "../MantineUi/IconText";
 import { Containerui } from "../MantineUi/ContainerUi";
-
+import React from "react";
 interface ISubNavBarProps {
   Data?: any;
   handleCancel?: any;

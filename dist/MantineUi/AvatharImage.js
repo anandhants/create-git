@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.AvatharImage = void 0;
 var _core = require("@mantine/core");
+var _react = _interopRequireDefault(require("react"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const AvatharImage = props => {
   const {
     AvathatarimageUrl,
@@ -14,7 +16,7 @@ const AvatharImage = props => {
     height,
     radius
   } = props;
-  return /*#__PURE__*/React.createElement(_core.Image, {
+  return /*#__PURE__*/_react.default.createElement(_core.Image, {
     src: AvathatarimageUrl,
     alt: name,
     className: "".concat(classNames),

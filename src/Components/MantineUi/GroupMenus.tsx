@@ -1,5 +1,5 @@
 import { Group, Text } from "@mantine/core"
-
+import React from "react";
 interface IGroupMenu {
     headerMenusDatas?: any,
     onClick?: any,

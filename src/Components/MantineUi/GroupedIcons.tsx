@@ -1,5 +1,7 @@
 import { Avatar } from "@mantine/core";
 import { Icons } from "./Icons";
+import React from "react";
+
 interface IMultipleIconsProps {
   IconName?: any;
   classNames?: any;

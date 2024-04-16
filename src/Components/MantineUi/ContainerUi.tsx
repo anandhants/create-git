@@ -1,5 +1,5 @@
 import { Container } from "@mantine/core"
-
+import React from "react";
 interface IContainer {
     children?: any;
     sizeContainer?: any;

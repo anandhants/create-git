@@ -5,6 +5,8 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.GroupMenus = void 0;
 var _core = require("@mantine/core");
+var _react = _interopRequireDefault(require("react"));
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 const GroupMenus = props => {
   const {
     headerMenusDatas,
@@ -13,11 +15,11 @@ const GroupMenus = props => {
     groupClassName,
     textClassName
   } = props;
-  return /*#__PURE__*/React.createElement(_core.Group, {
+  return /*#__PURE__*/_react.default.createElement(_core.Group, {
     gap: "xs",
     visibleFrom: "md",
     className: groupClassName
-  }, headerMenusDatas === null || headerMenusDatas === void 0 ? void 0 : headerMenusDatas.map(el => /*#__PURE__*/React.createElement(_core.Text, {
+  }, headerMenusDatas === null || headerMenusDatas === void 0 ? void 0 : headerMenusDatas.map(el => /*#__PURE__*/_react.default.createElement(_core.Text, {
     size: "md",
     inline: true,
     fw: 500,

@@ -2,6 +2,7 @@ import { Flex, Group } from "@mantine/core";
 import { Icons } from "./Icons";
 import { AvatharImage } from "./AvatharImage";
 import { HeaderName } from "./HeaderName";
+import React from "react";
 interface IIconTextArrowProps {
   dropdownTitle?: any;
   classNames?: any;

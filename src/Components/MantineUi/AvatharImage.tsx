@@ -1,4 +1,5 @@
 import { Image } from "@mantine/core";
+import React from "react";
 interface IAvatharProps {
   AvathatarimageUrl?: any;
   name?: any;
