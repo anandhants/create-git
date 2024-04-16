@@ -15,9 +15,9 @@ const HeaderMenu = props => {
   } = props;
   return /*#__PURE__*/_react.default.createElement(_core.Menu, {
     position: "bottom"
-  }, headerMenu === null || headerMenu === void 0 ? void 0 : headerMenu.map((el, index) => /*#__PURE__*/_react.default.createElement("div", {
+  }, headerMenu?.map((el, index) => /*#__PURE__*/_react.default.createElement("div", {
     key: el.id,
-    className: "".concat(classNames)
+    className: `${classNames}`
   }, /*#__PURE__*/_react.default.createElement(_core.MenuItem, {
     onClick: () => onClick(el.id, index)
   }, /*#__PURE__*/_react.default.createElement(_core.Text, {

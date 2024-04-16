@@ -31,7 +31,7 @@ const MobileNavBar = props => {
   } = props;
   const [openedLinks, setOpenedLinks] = (0, _react.useState)(null);
   // Initialize an array to track the open/close state of each collapse section
-  const [secondCollapseOpened, setSecondCollapseOpened] = (0, _react.useState)(new Array(data === null || data === void 0 ? void 0 : data.length).fill(false));
+  const [secondCollapseOpened, setSecondCollapseOpened] = (0, _react.useState)(new Array(data?.length).fill(false));
   const handleToggleLinksDrawer = index => {
     // If the link is already opened, close it, otherwise open it
     if (openedLinks === index) {
