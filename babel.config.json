@@ -7,7 +7,8 @@
                 "root": ["./"],
                 "alias": {
                     "@mantine/core": "@mantine/core",
-                    "@mantine/hooks": "@mantine/hooks" 
+                    "@mantine/hooks": "@mantine/hooks", 
+                    "@mantine/core/core/styles.css": "@mantine/core/core/styles.css"
                 }
             }
         ]
