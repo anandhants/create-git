@@ -17,7 +17,6 @@ var _ToggleMenu = require("../MantineUi/ToggleMenu");
 var _ContainerUi = require("../MantineUi/ContainerUi");
 var _GroupMenus = require("../MantineUi/GroupMenus");
 var _AvatharImage = require("../MantineUi/AvatharImage");
-var _hooks = require("@mantine/hooks");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 function _getRequireWildcardCache(e) { if ("function" != typeof WeakMap) return null; var r = new WeakMap(), t = new WeakMap(); return (_getRequireWildcardCache = function (e) { return e ? t : r; })(e); }
 function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; if (null === e || "object" != typeof e && "function" != typeof e) return { default: e }; var t = _getRequireWildcardCache(r); if (t && t.has(e)) return t.get(e); var n = { __proto__: null }, a = Object.defineProperty && Object.getOwnPropertyDescriptor; for (var u in e) if ("default" !== u && {}.hasOwnProperty.call(e, u)) { var i = a ? Object.getOwnPropertyDescriptor(e, u) : null; i && (i.get || i.set) ? Object.defineProperty(n, u, i) : n[u] = e[u]; } return n.default = e, t && t.set(e, n), n; }
@@ -34,6 +33,7 @@ function _interopRequireWildcard(e, r) { if (!r && e && e.__esModule) return e; 
 // import { useDisclosure } from "@mantine/hooks";
 // import MobileNavBar from "./MobileNavBar";
 
+// import { useMediaQuery } from '@mantine/hooks';
 // interface INavBarInterface {
 //   headerMenus?: any
 //   headerSelectData?: any
@@ -52,7 +52,9 @@ const NavBar = () => {
   const [searchValue, setSearchValue] = (0, _react.useState)(null);
   const [openSubMenuId, setSubOpenMenuId] = (0, _react.useState)(null);
   const [openSubTitleMenu, setOpenSubTitleMenu] = (0, _react.useState)(null);
-  const isMobile = (0, _hooks.useMediaQuery)('(max-width: 991px)');
+
+  // const isMobile = useMediaQuery('(max-width: 991px)');
+
   const handleHeaderClick = id => {
     setOpenMenuId(prevId => prevId === id ? id : id);
     setSubOpenMenuId(null);
@@ -61,12 +63,14 @@ const NavBar = () => {
     setOpenMenuId(null);
     setSubOpenMenuId(null);
   };
-  (0, _react.useEffect)(() => {
-    if (isMobile) {
-      setOpenMenuId(null);
-      setSubOpenMenuId(null);
-    }
-  }, [isMobile]);
+
+  // useEffect(() => {
+  //   if (isMobile) {
+  //     setOpenMenuId(null);
+  //     setSubOpenMenuId(null);
+  //   }
+  // }, [isMobile])
+
   const headerSubMenuFilter = _DataUtilis.headerSubMenu === null || _DataUtilis.headerSubMenu === void 0 ? void 0 : _DataUtilis.headerSubMenu.filter(el => el.id === openMenuId);
   return /*#__PURE__*/_react.default.createElement(_core.Paper, {
     className: "xl:px-24 px-4 py-4",
